@@ -2,6 +2,7 @@ import Navigation from '@/components/ui/Navigation'
 import Header from '@/components/ui/Header'
 import Offer from '@/components/sections/Offer'
 import AboutMe from '@/components/sections/AboutMe'
+import Opinions from '@/components/sections/Opinions'
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <main>
                 <Offer />
                 <AboutMe />
+                <Opinions />
             </main>
         </div>
     )
