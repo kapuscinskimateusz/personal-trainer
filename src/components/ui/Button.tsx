@@ -6,7 +6,7 @@ interface ButtonProps {
 
 export default function Button({ children }: ButtonProps) {
     return (
-        <button className="inline-block rounded-sm bg-lime-500 px-5 py-2.5 text-xs font-semibold uppercase text-black transition-colors hover:bg-lime-600">
+        <button className="inline-block bg-lime-500 px-5 py-2.5 text-xs font-semibold uppercase text-black transition-colors hover:bg-lime-600">
             {children}
         </button>
     )

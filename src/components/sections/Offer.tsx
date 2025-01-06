@@ -23,23 +23,20 @@ const services = [
 
 export default function Offer() {
     return (
-        <section
-            id="oferta"
-            className="min-h-screen bg-zinc-950 py-5 text-zinc-50"
-        >
-            <div className="max-auto container flex flex-col gap-2.5 px-5">
+        <section id="oferta" className="bg-zinc-900 py-5 text-zinc-50">
+            <div className="container mx-auto grid gap-2.5 px-5 md:grid-cols-2 lg:grid-cols-3">
                 {services.map((service) => (
                     <div
                         key={service.title}
-                        className="flex flex-col gap-2.5 rounded-sm border-2 border-zinc-900 p-5 text-center"
+                        className="mx-auto flex max-w-md flex-col items-center gap-2.5 border-2 border-zinc-700 bg-zinc-800 p-5"
                     >
-                        <div className="flex justify-center">
-                            {service.icon}
-                        </div>
+                        {service.icon}
                         <h3 className="text-xl font-bold uppercase">
                             {service.title}
                         </h3>
-                        <p>{service.description}</p>
+                        <p className="text-center text-sm text-zinc-200">
+                            {service.description}
+                        </p>
                     </div>
                 ))}
             </div>

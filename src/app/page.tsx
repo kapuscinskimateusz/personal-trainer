@@ -1,7 +1,7 @@
 import Navigation from '@/components/ui/Navigation'
 import Header from '@/components/ui/Header'
-// import AboutMe from '@/components/sections/AboutMe'
 import Offer from '@/components/sections/Offer'
+import AboutMe from '@/components/sections/AboutMe'
 
 export default function Home() {
     return (
@@ -10,7 +10,7 @@ export default function Home() {
             <Header />
             <main>
                 <Offer />
-                {/* <AboutMe /> */}
+                <AboutMe />
             </main>
         </div>
     )
