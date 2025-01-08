@@ -1,13 +1,21 @@
-import Carousel from '@/components/ui/Carousel'
+import { reviews } from '@/data/Reviews'
 
-export default function Opinions() {
+import Carousel from '@/components/ui/Carousel'
+import Review from '@/components/Review'
+
+export default function Reviews() {
     return (
         <section className="bg-zinc-900 py-5 text-zinc-50">
             <div className="container mx-auto px-5">
                 <h2 className="mb-2.5 text-2xl font-bold uppercase">
                     Opinie klientów
                 </h2>
-                <Carousel />
+
+                <Carousel
+                    slides={reviews.map((review, index) => (
+                        <Review key={index} {...review} />
+                    ))}
+                />
             </div>
         </section>
     )
