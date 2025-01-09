@@ -7,7 +7,7 @@ export default function AboutMe() {
             id="o-mnie"
             className="min-h-screen bg-zinc-950 py-5 text-zinc-50"
         >
-            <div className="container mx-auto flex flex-col gap-5 px-5 md:gap-2.5 lg:flex-row-reverse">
+            <div className="container flex flex-col gap-5 md:gap-2.5 lg:flex-row-reverse">
                 <div className="md:p-2.5">
                     <h2 className="mb-2.5 text-2xl font-bold uppercase">
                         O mnie

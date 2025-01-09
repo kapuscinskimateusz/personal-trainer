@@ -15,7 +15,7 @@ export default function Header() {
                     priority
                 />
 
-                <div className="container mx-auto flex h-full flex-col items-center justify-center gap-2.5 px-5 text-center">
+                <div className="container flex h-full flex-col items-center justify-center gap-2.5 text-center">
                     <h1 className="text-xs font-semibold uppercase text-lime-500">
                         Trener personalny Jan Kowalski
                     </h1>

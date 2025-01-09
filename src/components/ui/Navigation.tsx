@@ -18,7 +18,7 @@ export default function Navigation({ className = '' }: NavigationProps) {
 
     return (
         <nav className={navClasses}>
-            <div className="container mx-auto flex h-full items-center justify-between px-5">
+            <div className="container flex h-full items-center justify-between">
                 <Link
                     href="/"
                     className="text-center text-xs font-semibold uppercase"

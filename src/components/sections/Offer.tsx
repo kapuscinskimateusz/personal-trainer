@@ -24,7 +24,7 @@ const services = [
 export default function Offer() {
     return (
         <section id="oferta" className="bg-zinc-900 py-5 text-zinc-50">
-            <div className="container mx-auto grid gap-2.5 px-5 md:grid-cols-2 lg:grid-cols-3">
+            <div className="container grid gap-2.5 md:grid-cols-2 lg:grid-cols-3">
                 {services.map((service) => (
                     <div
                         key={service.title}
