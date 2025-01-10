@@ -6,9 +6,9 @@ interface DesktopMenuProps {
 
 export default function DesktopMenu({ items }: DesktopMenuProps) {
     return (
-        <ul className="flex items-center gap-5">
+        <ul className="mb-0 flex list-none items-center gap-4">
             {items.map((item) => (
-                <li key={item.text}>
+                <li key={item.text} className="text-sm uppercase">
                     <Link href={item.value}>{item.text}</Link>
                 </li>
             ))}

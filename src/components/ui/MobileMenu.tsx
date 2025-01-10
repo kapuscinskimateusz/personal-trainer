@@ -18,28 +18,31 @@ export default function MobileMenu({ items }: MobileMenuProps) {
     return (
         <>
             <button onClick={handleShowMenu}>
-                <Menu className="h-5 w-5" />
+                <Menu />
             </button>
 
             {isMenuVisible && (
-                <div className="fixed inset-0 flex items-center bg-black/90 text-white">
-                    <div className="absolute inset-x-0 top-0 flex h-16 items-center justify-end px-5">
+                <div className="fixed inset-0 bg-black/90">
+                    <div className="container absolute inset-x-0 top-0 flex h-16 items-center justify-end">
                         <button onClick={handleHideMenu}>
-                            <X className="h-5 w-5" />
+                            <X />
                         </button>
                     </div>
-                    <ul className="w-full px-5">
-                        {items.map((item) => (
-                            <li key={item.text} onClick={handleHideMenu}>
-                                <Link
-                                    href={item.value}
-                                    className="block py-2.5 text-center uppercase"
-                                >
-                                    {item.text}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+
+                    <div className="container flex h-full items-center">
+                        <ul className="mb-0 w-full list-none">
+                            {items.map((item) => (
+                                <li key={item.text} onClick={handleHideMenu}>
+                                    <Link
+                                        href={item.value}
+                                        className="block py-2.5 text-center text-lg font-semibold uppercase"
+                                    >
+                                        {item.text}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             )}
         </>

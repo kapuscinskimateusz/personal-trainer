@@ -15,18 +15,16 @@ export default function Header() {
                     priority
                 />
 
-                <div className="container flex h-full flex-col items-center justify-center gap-2.5 text-center">
-                    <h1 className="text-xs font-semibold uppercase text-lime-500">
-                        Trener personalny Jan Kowalski
-                    </h1>
-                    <h2 className="text-3xl font-bold uppercase text-zinc-50">
-                        Wymarzona forma na wyciągnięcie ręki!
-                    </h2>
-                    <p className="text-zinc-200">
-                        Odkryj potencjał swojego ciała pod okiem
-                        profesjonalisty.
-                    </p>
-                    <Button>Umów się na konsultację</Button>
+                <div className="container flex h-full items-center justify-center md:justify-start">
+                    <div className="text-center md:text-left">
+                        <h1>Trener personalny Jan Kowalski</h1>
+                        <h2>Wymarzona forma na wyciągnięcie ręki!</h2>
+                        <p>
+                            Odkryj potencjał swojego ciała pod okiem
+                            profesjonalisty.
+                        </p>
+                        <Button>Umów się na konsultację</Button>
+                    </div>
                 </div>
             </div>
         </header>
