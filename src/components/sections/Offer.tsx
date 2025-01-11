@@ -1,5 +1,7 @@
 import { Apple, Dumbbell, NotebookPen } from 'lucide-react'
 
+import FadeIn from '@/components/ui/FadeIn'
+
 const services = [
     {
         icon: <Dumbbell className="stroke-lime-500" />,
@@ -24,18 +26,20 @@ const services = [
 export default function Offer() {
     return (
         <section id="oferta" className="bg-zinc-900 py-6">
-            <div className="container grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {services.map((service) => (
-                    <div
-                        key={service.title}
-                        className="card flex flex-col items-center text-center"
-                    >
-                        <div className="mb-4">{service.icon}</div>
-                        <h3>{service.title}</h3>
-                        <p>{service.description}</p>
-                    </div>
-                ))}
-            </div>
+            <FadeIn>
+                <div className="container grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {services.map((service) => (
+                        <div
+                            key={service.title}
+                            className="card flex flex-col items-center text-center"
+                        >
+                            <div className="mb-4">{service.icon}</div>
+                            <h3>{service.title}</h3>
+                            <p>{service.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </FadeIn>
         </section>
     )
 }

@@ -3,6 +3,7 @@ import Header from '@/components/ui/Header'
 import Offer from '@/components/sections/Offer'
 import AboutMe from '@/components/sections/AboutMe'
 import Reviews from '@/components/sections/Reviews'
+import Contact from '@/components/sections/Contact'
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
                 <Offer />
                 <AboutMe />
                 <Reviews />
+                <Contact />
             </main>
         </div>
     )

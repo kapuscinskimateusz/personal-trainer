@@ -6,6 +6,8 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 import { ReactElement, useCallback } from 'react'
 
+import Button from '@/components/ui/Button'
+
 interface CarouselProps {
     slides: ReactElement[]
 }
@@ -25,14 +27,14 @@ export default function Carousel({ slides }: CarouselProps) {
 
     return (
         <div>
-            {/* <div className="mb-2.5 flex justify-end">
-                <button onClick={handlePrevClick}>
+            <div className="mb-4 hidden justify-end gap-4 md:flex">
+                <Button variant="outline" square onClick={handlePrevClick}>
                     <ChevronLeft />
-                </button>
-                <button onClick={handleNextClick}>
+                </Button>
+                <Button variant="outline" square onClick={handleNextClick}>
                     <ChevronRight />
-                </button>
-            </div> */}
+                </Button>
+            </div>
 
             <div ref={emblaRef} className="overflow-hidden">
                 <div className="-ml-4 flex">

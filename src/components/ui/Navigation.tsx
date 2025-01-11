@@ -10,6 +10,7 @@ interface NavigationProps {
 const menuItems: Option<string>[] = [
     { text: 'Oferta', value: '#oferta' },
     { text: 'O mnie', value: '#o-mnie' },
+    { text: 'Opinie', value: '#opinie' },
     { text: 'Kontakt', value: '#kontakt' },
 ]
 

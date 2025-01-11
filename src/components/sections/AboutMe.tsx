@@ -1,11 +1,13 @@
 import Image from 'next/image'
+
+import FadeIn from '@/components/ui/FadeIn'
 import PersonalTrainerImage from '../../../public/personal-trainer.jpg'
 
 export default function AboutMe() {
     return (
         <section id="o-mnie" className="bg-zinc-950 py-6">
             <div className="container flex flex-col gap-4 lg:flex-row lg:items-center">
-                <div>
+                <FadeIn direction="right">
                     <div>
                         <h2>O mnie</h2>
                         <p>
@@ -37,11 +39,11 @@ export default function AboutMe() {
                             <li>Specjalista ds. Dietetyki Sportowej</li>
                         </ul>
                     </div>
-                </div>
+                </FadeIn>
 
-                <div className="relative mx-auto max-w-sm">
+                <FadeIn direction="left" className="relative mx-auto max-w-sm">
                     <Image src={PersonalTrainerImage} alt="Personal trainer" />
-                </div>
+                </FadeIn>
             </div>
         </section>
     )

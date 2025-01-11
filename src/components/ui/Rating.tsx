@@ -8,7 +8,7 @@ interface RatingProps {
 
 export default function Rating({ value }: RatingProps) {
     return (
-        <div className="flex gap-1">
+        <div className="flex gap-1.5">
             {[...Array(5)].map((_, index) => (
                 <Star
                     key={index}

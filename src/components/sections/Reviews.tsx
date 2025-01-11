@@ -5,7 +5,7 @@ import Review from '@/components/Review'
 
 export default function Reviews() {
     return (
-        <section className="bg-zinc-900 py-6">
+        <section id="opinie" className="bg-zinc-900 py-6">
             <div className="container">
                 <h2>Opinie klientów</h2>
 
