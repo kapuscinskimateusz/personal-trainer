@@ -5,9 +5,9 @@ import ContactForm from '@/components/ContactForm'
 
 export default function Contact() {
     return (
-        <section id="kontakt" className="bg-zinc-950 py-6">
+        <section id="kontakt">
             <div className="container">
-                <div className="grid grid-cols-2 items-center gap-4">
+                <div className="grid items-center gap-4 lg:grid-cols-2">
                     <FadeIn direction="right">
                         <h2>Kontakt</h2>
                         <p>

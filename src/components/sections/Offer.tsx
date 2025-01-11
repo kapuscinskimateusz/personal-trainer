@@ -25,7 +25,7 @@ const services = [
 
 export default function Offer() {
     return (
-        <section id="oferta" className="bg-zinc-900 py-6">
+        <section id="oferta">
             <FadeIn>
                 <div className="container grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {services.map((service) => (

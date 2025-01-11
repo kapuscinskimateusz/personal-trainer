@@ -5,7 +5,7 @@ import PersonalTrainerImage from '../../../public/personal-trainer.jpg'
 
 export default function AboutMe() {
     return (
-        <section id="o-mnie" className="bg-zinc-950 py-6">
+        <section id="o-mnie">
             <div className="container flex flex-col gap-4 lg:flex-row lg:items-center">
                 <FadeIn direction="right">
                     <div>
@@ -41,7 +41,10 @@ export default function AboutMe() {
                     </div>
                 </FadeIn>
 
-                <FadeIn direction="left" className="relative mx-auto max-w-sm">
+                <FadeIn
+                    direction="left"
+                    className="relative mx-auto max-w-sm md:mr-0"
+                >
                     <Image src={PersonalTrainerImage} alt="Personal trainer" />
                 </FadeIn>
             </div>

@@ -23,6 +23,14 @@
     ol {
         @apply mb-4 list-inside list-disc marker:text-lime-500;
     }
+
+    section {
+        @apply bg-zinc-900 py-6;
+    }
+
+    section:nth-child(even) {
+        @apply bg-zinc-950;
+    }
 }
 
 @layer components {
