@@ -6,7 +6,7 @@ import ContactForm from '@/components/ContactForm'
 export default function Contact() {
     return (
         <section id="kontakt">
-            <div className="container">
+            <div className="container overflow-x-hidden">
                 <div className="grid items-center gap-4 lg:grid-cols-2">
                     <FadeIn direction="right">
                         <h2>Kontakt</h2>

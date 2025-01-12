@@ -6,7 +6,7 @@ import PersonalTrainerImage from '../../../public/personal-trainer.jpg'
 export default function AboutMe() {
     return (
         <section id="o-mnie">
-            <div className="container flex flex-col gap-4 lg:flex-row lg:items-center">
+            <div className="container flex flex-col gap-4 overflow-x-hidden lg:flex-row lg:items-center">
                 <FadeIn direction="right">
                     <div>
                         <h2>O mnie</h2>
