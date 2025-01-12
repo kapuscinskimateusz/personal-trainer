@@ -31,7 +31,7 @@ export default function ScrollTop() {
 
     return (
         <div
-            className={`fixed bottom-6 right-6 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-opacity`}
+            className={`fixed bottom-6 right-6 ${isVisible ? 'opacity-100' : 'opacity-0'} hidden transition-opacity lg:inline-block`}
         >
             <Button variant="outline" square onClick={handleScrollTop}>
                 <ChevronUp />
