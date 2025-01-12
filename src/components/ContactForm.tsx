@@ -5,11 +5,13 @@ import { useForm } from 'react-hook-form'
 import FormGroup from '@/components/ui/FormGroup'
 import Input from '@/components/ui/Input'
 import Button from '@/components/ui/Button'
+import Textarea from '@/components/ui/Textarea'
 
 interface FormData {
     name: string
     email: string
     phone: string
+    message: string
 }
 
 export default function ContactForm() {
@@ -56,6 +58,18 @@ export default function ContactForm() {
                         },
                     })}
                     placeholder="Numer telefonu"
+                />
+            </FormGroup>
+            <FormGroup error={errors.message}>
+                <Textarea
+                    {...register('message', {
+                        required: 'Twoja wiadomość jest wymagana',
+                        maxLength: {
+                            value: 150,
+                            message: 'Przekroczono limit znaków: 150',
+                        },
+                    })}
+                    placeholder="Twoja wiadomość*"
                 />
             </FormGroup>
 

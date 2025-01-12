@@ -4,6 +4,7 @@ import Offer from '@/components/sections/Offer'
 import AboutMe from '@/components/sections/AboutMe'
 import Reviews from '@/components/sections/Reviews'
 import Contact from '@/components/sections/Contact'
+import ScrollTop from '@/components/ui/ScrollTop'
 
 export default function Home() {
     return (
@@ -16,6 +17,8 @@ export default function Home() {
                 <Reviews />
                 <Contact />
             </main>
+
+            <ScrollTop />
         </div>
     )
 }
