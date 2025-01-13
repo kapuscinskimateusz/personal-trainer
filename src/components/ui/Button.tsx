@@ -1,8 +1,11 @@
+import Link from 'next/link'
+
 import { ReactNode } from 'react'
 
 interface ButtonProps {
     variant?: 'primary' | 'outline'
     square?: boolean
+    href?: string
     children: ReactNode
     onClick?: () => void
 }
@@ -16,6 +19,7 @@ const variants = {
 export default function Button({
     variant = 'primary',
     square,
+    href = '',
     children,
     onClick,
 }: ButtonProps) {
@@ -25,7 +29,11 @@ export default function Button({
         square ? 'aspect-square' : 'px-5',
     ].join(' ')
 
-    return (
+    return href ? (
+        <Link href={href} className={classes}>
+            {children}
+        </Link>
+    ) : (
         <button className={classes} onClick={onClick}>
             {children}
         </button>

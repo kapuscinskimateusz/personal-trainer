@@ -27,7 +27,7 @@ export default function Header() {
                             Odkryj potencjał swojego ciała pod okiem
                             profesjonalisty.
                         </p>
-                        <Button>Umów się na konsultację</Button>
+                        <Button href="#kontakt">Umów się na konsultację</Button>
                     </FadeIn>
                 </div>
             </div>
